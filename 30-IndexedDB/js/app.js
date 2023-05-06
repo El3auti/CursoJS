@@ -26,9 +26,9 @@ function crmBD() {
 
     //Config de base de datos
     crmBD.onupgradeneeded = function (e){
-        const db = e.target.result
+        const DB = e.target.result
 
-        const objectStore = db.createObjectStore('crm',{
+        const objectStore = DB.createObjectStore('crm',{
             keyPath:'crm',
             autoIncrement: true
         })
